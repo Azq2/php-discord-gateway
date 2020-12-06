@@ -1,7 +1,12 @@
 {
     "name": "simple-discord/gateway",
     "license": "MIT",
-    "version": "0.0.1-stable",
+    "version": "0.0.1",
+    "autoload": {
+    	"psr-4": {
+		    "Discord\\": "src/Discord"
+	    }
+    },
     "authors": [
         {
             "name": "Kirill Zhumarin",
