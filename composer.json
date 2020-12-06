@@ -1,0 +1,14 @@
+{
+    "name": "simple-discord/gateway",
+    "authors": [
+        {
+            "name": "Kirill Zhumarin",
+            "email": "kirill.zhumarin@gmail.com"
+        }
+    ],
+    "require": {
+        "ratchet/pawl": "^0.3.5",
+        "monolog/monolog": "^2.1",
+        "react/partial": "^3.0"
+    }
+}
