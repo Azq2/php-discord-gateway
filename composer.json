@@ -2,6 +2,8 @@
     "name": "simple-discord/gateway",
     "license": "MIT",
     "version": "0.0.1-dev",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Kirill Zhumarin",
