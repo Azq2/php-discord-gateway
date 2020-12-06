@@ -1,3 +1,8 @@
+# Installation
+```bash
+composer require simple-discord/gateway
+```
+
 # Basic usage
 ```php
 <?php
