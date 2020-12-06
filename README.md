@@ -47,3 +47,16 @@ $gw->connect();
 
 $loop->run();
 ```
+
+# Optional logging
+```php
+// Create your favorite LoggerInterface implementation
+$logger = new Monolog\Logger('discord-gateway');
+$logger->pushHandler(new Monolog\Handler\StreamHandler('php://stderr', Monolog\Logger::DEBUG));
+
+// Pass logger to Gateway
+$gw = new Discord\Gateway($loop, [
+	'token'		=> '....',
+	'logger'	=> $logger
+]);
+```
