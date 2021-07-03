@@ -145,7 +145,7 @@ class Gateway implements EventEmitterInterface {
 	}
 	
 	public function isConnected() {
-		return $this->connected;
+		return !!$this->ws;
 	}
 	
 	public function send($message) {
