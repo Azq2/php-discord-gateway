@@ -1,7 +1,7 @@
 {
     "name": "simple-discord/gateway",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Discord\\": "src/Discord"
