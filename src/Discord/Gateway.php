@@ -140,6 +140,23 @@ class Gateway implements EventEmitterInterface {
 		$this->heartbeat(false);
 	}
 	
+	public function getWebsocket() {
+		return $this->ws;
+	}
+	
+	public function isConnected() {
+		return $this->connected;
+	}
+	
+	public function send($message) {
+		if ($this->isConnected()) {
+			return $this->ws->send(json_encode($message));
+		} else {
+			$this->logger->error("trying write to unconnected gateway");
+			return false;
+		}
+	}
+	
 	protected function heartbeat($timeout) {
 		if ($this->heartbeat) {
 			$this->loop->cancelTimer($this->heartbeat);
